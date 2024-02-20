@@ -1,0 +1,406 @@
+/* ECF - Evaluation Graduate Développeur Web et Web Mobile
+     Réalisation par : Voahiranirina Myriam RAJERIARISOA
+     Date : Février 2024
+     Projet : création du site internet du Garage V. Parrot
+/* Palette des couleurs : #D92332 / #D94350 / #D9777F / #262526 / #F2F2F2
+/* Police Rajdhani / Barlow / Hind madurai
+
+/*================================= Ecran d'accueil : première page ===========================================*/
+
+/* Page */
+body {
+  background-color: #F2F2F2;
+  }
+
+  * {
+   margin: 0;
+   padding: 0;
+  }
+
+/* Entête */
+header {
+  font-family: Barlow;
+  display: flex;
+  justify-content: space-between;
+  background-color:  #D9777F;
+  color: #F2F2F2;
+  border-bottom: 5px solid #D92332;
+  height: 100px;
+  } 
+       
+  /*            .home-quai-antique {
+                 display: flex;
+                 align-items: center;
+                 margin: 5px;
+             }
+       
+             .logo-restau-home {
+              border-radius: 30%;
+              border: 2px solid #906427;
+
+             }*/
+       
+             .restau-home {
+               font-size: 2rem;
+               font-family: Montserrat;
+               font-weight: bold;
+               margin-left: 10px;
+             }
+       
+             /* Menu de navigation */
+             .nav {   
+                font-family: Lora;
+                 display: flex;
+                 align-items: center;
+                 position: absolute;
+                 right: 20px;
+                 top: 36px;
+             }
+       
+             .nav .nav-item {
+               font-size: 1rem;
+               font-weight: 700;
+               margin-left: 10px;
+               margin-right: 10px;
+               color: #b6ac97;
+               background-color: #392c1e;
+             }
+
+             .nav .nav-item > a {
+              text-decoration: none;
+              color: #b6ac97;
+            } 
+             
+            .nav .nav-item > a:focus {
+              border: 3px solid #392c1e;
+              border-radius: 20%;
+              padding: 5px;
+              background-color: #906427;
+            }
+
+            .nav .nav-item .img-burger {
+              height: 15px;
+              width: 15px;
+              border: 2px solid #b6ac97;
+              border-radius: 20%;
+              position: absolute;
+              right: 5000px;
+            }
+
+       /* Contenu-galerie */
+
+         .galerie {
+          font-family: Lora;
+          padding-top: 20px;
+         }
+
+         .galerie .section-galerie .list-menu-galerie {
+          text-decoration: none;
+          list-style: none;
+          display: flex;
+          flex-direction: row;
+          justify-content: space-evenly;
+        }
+
+      
+        .galerie > li:hover {
+          border : 10px solid #906427;
+        }
+        
+
+        .button-galerie {
+          display: flex;
+          justify-content: center;
+          width: 100vw;
+          padding-bottom: 10px;
+        }
+
+        .send-button-galerie  {
+          background-color:#392c1e;
+          border: 2px solid #906427;
+          border-radius: 15%;
+          font-family: Lora;
+          padding-bottom: 10px
+        }
+      
+        .send-button-galerie .lien-client {
+          text-decoration: none;
+          list-style: none;
+          color: white;
+          font-weight: bold;
+        }
+
+        .send-button-galerie:selected {
+          background-color:#b6ac97;
+          color:#906427;
+          font-weight: 500;
+          font-weight: bold;
+        }
+
+
+       /* Contenu-main */
+
+           .main {
+          font-family: Lora;
+           background-color: white;
+           vertical-align: top;
+         /*  display: inline-block;
+           width: 60%;
+           height: 700px;
+           margin-left: 60px;
+           margin-right: 20px;
+           margin-bottom: 30px;*/
+           padding: 50px;
+           } 
+
+          section {
+            margin-bottom: 40px;
+          }
+
+
+
+                      /* Pied de page */
+                      .footer {
+                        background-color: #D9777F;
+                        border-top: 4px solid #D92332;
+                        color: #F2F2F2;
+                      }
+                        
+                
+                        .footer > .restau-footer {
+                          font-family: Montserrat;
+                          text-align: center;
+                        }
+
+                        .menu-footer {
+                          text-decoration: none;
+                          list-style: none;
+                          font-family: Hind Madurai;
+                          width: 100%;
+                          display: flex;
+                          justify-content: space-evenly;
+                          margin-top: 30px;
+                        }
+                
+                        .list-menu-footer {
+                          text-decoration: none;
+                          list-style: none;
+                          font-family: Hind Madurai;
+                          /*display: inline-block;
+                          position: absolute;
+                          left: 400px;*/
+                          font-size: 0.8rem;
+                          font-weight: bold;
+                        }
+                
+                        .list-menu-footer li {
+                          margin-bottom: 5px;
+                        }
+
+                        .list-menu-footer li a {
+                          text-decoration: none;
+                          color: #F2F2F2;
+                        }
+                        .footer .menu-footer .list-menu-footer li a:focus {
+                          border: 3px solid #392c1e;
+                          border-radius: 20%;
+                          padding: 5px;
+                          background-color: #906427;
+                        }
+
+                        .list-social-footer {
+                          text-decoration: none;
+                          list-style: none;
+                          font-family: Hind Madurai;
+                          /*display: inline-block;
+                          position: absolute;
+                          left: 200px;*/
+                        }
+
+                        .social-f > .list-social-footer > li > img {
+                          width: 25px;
+                          height: 25px;
+                          padding: 5px;
+                        }
+
+                        .list-horaires-footer {
+                          text-decoration: none;
+                          list-style: none;
+                          font-family: Hind Madurai;
+                          font-size: 0.8rem;
+                          font-weight: bold;
+                          /*display: inline-block;
+                          position: absolute;
+                          right: 100px;*/
+                        }
+                        
+                
+                          .footer > .date-footer {
+                          font-family: Hind Madurai;
+                          width: 100vw;
+                          text-align: center;
+                          font-size: 0.8rem;
+                          padding-top: 80px;
+                        }
+    
+
+
+                        /*======================== Formulaire client : nouvelle page ============================ */
+                        
+ 
+                        
+                       /* .main-formulaire {
+                          display: flex;
+                          flex-direction: column;
+                          justify-content: center;
+                        }*/
+
+      .h1-form {
+        text-align : center;
+      }
+      
+      .h1-formulaire {
+        font-family: Montserrat;
+        font-size: 3rem;
+        font-weight: 500;
+        font-style: italic;
+        color:#906427
+      }
+
+
+      /*---------------------- Formulaire : déjà client -------------------------*/
+      .main-formulaire .deja-client-formulaire {
+        border-top: 2px solid #906427;
+        padding-bottom: 20px;
+        /*width: 100%;
+        /*justify-items: center ;*/
+      }
+
+ 
+
+      .h2-formulaire {
+        padding-bottom: 10px;
+      }
+
+      form {
+        max-width: 50%;
+    }
+
+      form label {
+          display: block;
+          font-weight: bold;
+          margin-bottom: 10px;
+      }
+  
+      label.inline-label {
+          display: inline-block;
+      }
+  
+      fieldset {
+          border: 1px solid lightgray;
+          background-color: rgba(225, 233, 255, 0.25);
+      }
+  
+      legend {
+          font-style: italic;
+          font-size: 1.1em;
+          padding: 5px;
+      }
+  
+      form input, form select, form textarea {
+          display: inline-block;
+          margin-bottom: 10px;
+          padding: 10px;
+          width: 80%;
+      }
+  
+      form input[type="radio"],
+      form input[type="checkbox"],
+      form input[type="submit"] {
+          width: auto;
+      }
+  
+      button[type=submit], button[type=reset] {
+          padding: 10px;
+          margin-top: 15px;
+      } 
+
+      .send-button {
+        background-color: #906427;
+        color: white;
+        border-radius: 15%;
+        font-family: Lora;
+        font-size: 15px;
+        padding-bottom: 10px;
+      }
+      
+
+
+
+
+                        /*==================== Media queries : pour formater selon la taille écran utilisateur =================*/
+                       
+                       @media (max-width: 450) {
+
+                          .list-social-footer {
+                            border-left:3px solid #906427;
+                            padding-left: 2px;
+                            }
+
+                          .list-menu-footer {
+                            border-left:3px solid #906427;
+                            padding-left: 2px;
+                            }
+                            .list-horaires-footer {
+                             border-left:3px solid #906427;
+                            padding-left: 2px;
+                            }
+                            .restau-home {
+                              font-size: 1rem;
+                              font-family: Montserrat;
+                              font-weight: bold;
+                              margin-left: 2px;
+                            }
+                            .nav {   
+                               align-items: flex-end;
+                               position: absolute;
+                               right: 2px;
+                               top: 100px;
+                           }
+                              .nav .nav-item {
+                                font-size: 0.5rem;
+                                font-weight: 200;
+                              }  
+                              nav .nav-item .img-burger {
+                                width: 20%;
+                                height: 20%;
+                                position: absolute;
+                                right: 30px;
+                                }
+
+                        }
+                        
+
+                        /* @media (max-width: 420px) { */
+                          
+                        
+                        @media (max-width: 850px) {
+                          .restau-home {
+                            font-size: 1.2rem;
+                          }
+
+                            .nav .nav-item {
+                              font-size: 0.8rem;
+                            }  
+
+                          .galerie .list-menu-galerie{
+                            display: flex;
+                            flex-direction: column;
+                            align-items: center;
+                          }
+
+                          .list-menu-galerie-item{
+                            margin: 20px;
+                          }
+                        }
+                      

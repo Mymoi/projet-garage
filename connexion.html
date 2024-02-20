@@ -1,0 +1,182 @@
+<!-- ECF - Evaluation Graduate Développeur Web et Web Mobile
+     Réalisation par : Voahiranirina Myriam RAJERIARISOA
+     Date : Février 2024
+     Projet : création du site internet du Garage V. Parrot
+     Page de saisie, pour l'administrateur et les employés, pour se connecter à son espace professionnel.
+-->
+<!DOCTYPE>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="./css/style.css">
+    <title>Garage-Vincent-Parrot</title>
+  </head>
+
+  <!-- Corps de la page -->
+  <body>
+
+  <!-- Entête : le logo du garage -->
+    <header>
+      <div class="home-garage-v.parrot">
+        <img 
+        src="./css/img/logo-garage.png" alt="Garage-Vincent-Parrot logo" class="logo-garage-home" 
+        />
+        <span class="garage-home"  id="home">TRAVAIL DE PRO</span>
+      </div>
+<!-- Entête : la barre de navigation -->
+    <nav class="nav" rôle="navigation">
+      <div class="nav-item" ><a class="lien-entretien-voiture" href="./entretien-voiture.html" alt="entretien vehicule">Entretenir votre voiture</a></div>
+      <div class="nav-item" ><a class="lien-reparation-carrosserie" href="./reparation-carrosserie.html" alt="reparation carrosserie">Réparer la carrosserie</a></div>
+      <div class="nav-item" ><a class="lien-changement-pneus" href="./changement-pneus.html" alt="changement des pneus">Changer vos pneus</a></div>
+      <div class="nav-item" ><a class="lien-voitures-occasions" href="./voitures-occasions.html" alt="voitures en occasion">Voir nos voitures d'occasion</a></div>
+      <div class="nav-item" ><a class="lien-contact" href="#contact">Contact</a></div>
+      <div class="nav-item" ><a class="lien-rendez-vous" href="./formulaire.html" alt="formulaire client pour rendez-vous">Prendre un rendez-vous</a></div>
+    </nav>
+   
+  </header>
+
+
+    <!-- Partie main : formulaire -->
+  <main class="main-form">
+    <section class="head-customer-form">
+      <h1 class="h1-form">Formulaire client</h1>
+    </section>
+
+    <section class="customer-form">
+      <h2 class="h2-form">Vous êtes déjà enregistré :</h2>
+      <p>Vous pouvez directement vous connecter avec vos identifiants</p>
+        
+      <form method="POST" action="action.php" id="connexion-custom-form">
+        <div class="input-group">
+          <label for="email">Email</label>
+          <input type="email" name="email" id="email" placeholder="email@email" checked required>
+        </div>
+      
+        <div class="input-group">
+          <label for="name">Mot de passe</label>
+          <input type="password" name="password" id="password" placeholder="Mot de passe" checked required>
+        </div>
+
+        <div class="input-action">
+          <!-- <button class="send-button" id="bt-sign-in" type="submit">Se connecter</button> -->
+          <input type="submit" value="Se connecter"  class="button-form" id="bt-sign-up">
+        </div>
+      </form>
+    </section>
+      
+      
+    <section class="new-customer-form">
+      <h2 class="h2-form">Pour vous enregistrer :</h2>
+      <p>Merci de remplir de ce formulaire pour recevoir notre newsletter des nouveautés</p>
+       
+      <form method="POST" action="action.php" id="register-custom-form">
+        <div class="input-group">
+          <label for="name">Nom</label>
+          <input type="text" name="name" id="name" placeholder="Votre nom" checked required>
+        </div>
+
+        <div class="input-group">
+          <label for="email">Email</label>
+          <input type="email" name="email" id="email" placeholder="email@email" checked required>
+        </div>
+      
+        <div class="input-group">
+          <label for="name">Mot de passe</label>
+          <input type="password" name="password" id="password" placeholder="Mot de passe" checked required>
+        </div>
+        
+        <div class="input-group">
+          <label for="birthDate">Date de naissance<br></label>
+          <input type="date" name="birthDate" id="birthDate" placeholder="Votre date de naissance" checked required>
+        </div>
+
+        <div class="input-group">
+          <label for="comment">Message<br></label>
+          <textarea rows="4" name="comment" id="comment" placeholder="Saisissez votre commentaire"></textarea>
+        </div>
+      
+        <p>Votre civilité :</p>
+        <div class="input-group">
+          <input type="radio" id="female" name="butt-radio-female" checked>
+          <label for="opt-female">Mme.</label>
+          
+          <input type="radio" id="male" name="butt-radio-male">
+          <label for="opt-male">M.</label>
+        </div>
+
+        <div class="input-group">
+          <label for="reponse-selector">
+            Merci de sélectionner le sujet concernant votre demande de contact
+          </label>
+          <select name="category" id="category">
+            <option value="entretien-voiture">Entretien voiture</option>
+            <option value="reparation-carrosserie">Réparation carrosserie</option>
+            <option value="changement-pneus">Changement des pneus</option>
+            <option value="voitures-occasions">Voiture d'occasions</option>
+          </select>
+        </div>
+      <hr>
+      <p>Cochez la case pour valider le formulaire :</p>
+      <div class="input-group">
+      <label for="cgv">
+        <input type="checkbox" id="cgv" name="cgv">
+        J'accepte les conditions générales
+      </label>
+      </div>
+      
+      <div class="input-action">
+        <!-- <button class="send-button" id="submit" type="submit">Créer votre compte client</button> -->
+        <input type="submit" value="Créer votre compte client"  class="button-form" id="bt-sign-up">
+
+        <!-- <button class="send-button" id="submit" type="submit">Vider le formulaire</button> -->
+        <input type="reset" value="Tout effacer" class="button-form" id="bt-reset">
+      </div>
+      </section>
+    </form>
+  </main>
+
+    <!---------------------------------Pied de page ------------------------------->
+
+    <footer class="footer">
+      <p class="garage-footer" id="contact">
+        <b>Garage V. Parrot</b>.<br>
+        1 Avenue des Dodoche<br>
+        31999 Toulouse<br>
+        Tel : 00 11 22 33 44
+      </p>
+    <div>
+    <ul class="menu-footer">
+      <li class="horaires-f">
+        <ul class="list-horaires-footer">
+          <li class="titre-horaires-footer" >HORAIRE</li>
+          <li class="jour-horaires-footer" ><b>Lundi</b> 07h30 à 12h30 - 13h30 à 18h30</li>
+          <li class="jour-horaires-footer" ><b>Mardi</b> 07h30 à 12h30 - 13h30 à 18h30</li>
+          <li class="jour-horaires-footer" ><b>Mercredi</b> 07h30 à 12h30 - 13h30 à 18h30</li>
+          <li class="jour-horaires-footer" ><b>Jeudi</b> 07h30 à 12h30 - 13h30 à 18h30</li>
+          <li class="jour-horaires-footer" ><b>Vendredi</b> 07h30 à 12h30 - 13h30 à 18h30</li>
+          <li class="jour-horaires-footer" ><b><i>Fermé le samedi et le dimanche</i></b></li>
+        </ul>
+      </li>
+      <li class="menu-f">
+        <ul class="list-menu-footer">
+          <li><a class="lien-rendez-vous" href="./formulaire.html" alt="formulaire client pour rendez-vous">Prendre un rendez-vous</a></div>
+          <li><a class="lien-home" href="#home">Home</a></li>
+          <li><a class="lien-accueil" href="./index.html" alt="page accueil">Accueil</a></li>
+          <li><a class="lien-contact" href="#contact">Contact</a></div>
+        </ul>
+      </li>
+      <li class="social-f">
+        <ul class="list-social-footer">
+          <li><img src="./css/img/f-logo.PNG"/></li>
+          <li><img src="./css./img/t-logo.PNG"></li>
+          <li><img src="./css./img/i-logo.PNG"></li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+      <p class="date-footer">@2024</p>
+    </footer>
+    <script src="script.js"></script>
+    </body>
+    </html>

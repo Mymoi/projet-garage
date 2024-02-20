@@ -1,0 +1,192 @@
+<!-- ECF - Evaluation Graduate Développeur Web et Web Mobile
+     Réalisation par : Voahiranirina Myriam RAJERIARISOA
+     Date : Février 2024
+     Projet : création du site internet du Garage V. Parrot
+     Page de présentation des voitures d'occasion
+-->
+<!DOCTYPE>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="./css/style.css">
+    <title>Garage-Vincent-Parrot</title>
+  </head>
+
+  <!-- Corps de la page -->
+  <body>
+
+  <!-- Entête : le logo du garage -->
+    <header>
+      <div class="home-garage-v.parrot">
+        <img 
+        src="./css/img/logo-garage.png" alt="Garage-Vincent-Parrot logo" class="logo-garage-home" 
+        />
+        <span class="garage-home"  id="home">TRAVAIL DE PRO</span>
+      </div>
+<!-- Entête : la barre de navigation -->
+    <nav class="nav" rôle="navigation">
+      <div class="nav-item" ><a class="lien-entretien-voiture" href="./entretien-voiture.html" alt="entretien vehicule">Entretenir votre voiture</a></div>
+      <div class="nav-item" ><a class="lien-reparation-carrosserie" href="./reparation-carrosserie.html" alt="reparation carrosserie">Réparer la carrosserie</a></div>
+      <div class="nav-item" ><a class="lien-changement-pneus" href="./changement-pneus.html" alt="changement des pneus">Changer vos pneus</a></div>
+      <div class="nav-item" ><a class="lien-voitures-occasions" href="./voitures-occasions.html" alt="voitures en occasion">Voir nos voitures d'occasion</a></div>
+      <div class="nav-item" ><a class="lien-contact" href="#contact">Contact</a></div>
+      <div class="nav-item" ><a class="lien-rendez-vous" href="./formulaire.html" alt="formulaire client pour rendez-vous">Prendre un rendez-vous</a></div>
+    </nav>
+   
+  </header>
+
+    <!-- Encart aside : galerie des images de plats du restaurant -->
+    <aside class="galerie">
+      <section class="section-galerie">
+        <ul class="list-menu-galerie">
+          <li class="list-menu-galerie-item">
+            <img src="./css/img/plat-cueilleur.png" alt="restaurant quai antique plat" class="galerie-plat" title="plat du menu cueilleur"/>
+          </li>
+          <li class="list-menu-galerie-item">
+            <img src="./css/img/plat-gargantuesque.png" alt="restaurant quai antique plat" class="galerie-plat" title="plat du menu gargantuesque"/>
+          </li>
+          <li class="list-menu-galerie-item">
+            <img src="./css/img/plat-moderne.png" alt="restaurant quai antique plat" class="galerie-plat" title="plat du menu moderne"/>
+          </li>
+        </ul>
+      </section>
+    
+    <section class="section-connexion-galerie">
+      <div class="button-galerie">
+        <button class="send-button-galerie" id="submit" type="submit"><a class="lien-client" href="./formulaire.html" alt="formulaire client">RESERVER</a></button>
+      </div>
+    </section>
+    </aside>
+
+    <!-- Bloc main : partie pour présenter le restaurant -->
+    <main class="main-carte">
+      <section class="menu-main">
+          <h1>
+           Présentation des menus
+          </h1>
+          <article class="menu-dejeuner">
+            <p>
+              Formule déjeuner
+             </p>
+             <p>
+              Lundi Mardi Jeudi Vendredi de 12h00 à 13h30
+             </p>
+             <p>
+              Le plat : 14 euros <br>
+              Les plat et dessert OU Plat et Entrée : 18 euros
+              Les entrée et plat et dessert : 20 euros
+             </p>
+          </article>
+          <article class="menu-diner">
+            <p>
+              Formule dîner
+             </p>
+             <p>
+              Lundi Mardi Mercredi Jeudi Vendredi de 19h30 à 21h00
+             </p>
+             <p>
+              Le plat : 14 euros <br>
+              Les plat et dessert OU Plat et Entrée : 18 euros
+              Les entrée et plat et dessert : 20 euros
+             </p>
+          </article>
+          <p>
+           Nous sommes ravis de vous offrir des plats concoctés avec soin.
+           En effet, chaque jour, nous sommes attentifs à l'origine de nos produits, viandes et produits maraîchés, frais et locau
+          </p>
+        <section class="menu-cueilleur">
+          <p>
+           Bienvenu sur le site de notre nouveau restaurant.
+           Nous sommes ravis de vous offrir des plats concoctés avec soin.
+           En effet, chaque jour, nous sommes attentifs à l'origine de nos produits, viandes et produits maraîchés, frais et locau
+          </p>
+          
+          <p> 
+            les menus sont adaptés à toute faim : les enfants peuvent les apprécier avec la quantité proportionnée (pour les moins de 10 ans).
+          </p>
+          <p>
+            N'hésitez pas à vous inscrire pour recevoir nos menus du jour, 
+            pour également bénéficier d'un apéritif maison, sans alcool, à chaque réservation de table!!
+          </p>
+          <p>
+            Au plaisir de vous faire apprécier nos nouveautés culinaires, élaborées par une cheffe passionnée !!!
+          </p>
+        </section>
+
+        <section class="menu-gargantuesque">
+          <p>
+          <h2>Les producteurs près de chez nous</h2>
+           Un aperçu des producteurs qui nous accompagnent dans notre aventure culinaire : 
+           <a class="site-producteurs" href="./formulaire.html" alt="producteurs locaux"> les producteurs locaux</a>
+          </p>
+          <p>
+          <h2>Les partenaires qui parlent de nous</h2>
+           Des institutions, des groupements d'artisants, tous les acteurs qui nous accompagnent : 
+           <a class="site-partenaires" href="./occitanie" alt="producteurs locaux"> les partenaires</a>
+          </p>
+        </section>
+        <section class="menu-moderne">
+          <p>
+            Bienvenu sur le site de notre nouveau restaurant.
+            Nous sommes ravis de vous offrir des plats concoctés avec soin.
+            En effet, chaque jour, nous sommes attentifs à l'origine de nos produits, viandes et produits maraîchés, frais et locau
+           </p>
+           
+           <p> 
+             les menus sont adaptés à toute faim : les enfants peuvent les apprécier avec la quantité proportionnée (pour les moins de 10 ans).
+           </p>
+           <p>
+             N'hésitez pas à vous inscrire pour recevoir nos menus du jour, 
+             pour également bénéficier d'un apéritif maison, sans alcool, à chaque réservation de table!!
+           </p>
+           <p>
+             Au plaisir de vous faire apprécier nos nouveautés culinaires, élaborées par une cheffe passionnée !!!
+           </p>
+         </section>
+    </main>
+    
+    <!---------------------------------Pied de page ------------------------------->
+
+    <footer class="footer">
+      <p class="garage-footer" id="contact">
+        <b>Garage V. Parrot</b>.<br>
+        1 Avenue des Dodoche<br>
+        31999 Toulouse<br>
+        Tel : 00 11 22 33 44
+      </p>
+    <div>
+    <ul class="menu-footer">
+      <li class="horaires-f">
+        <ul class="list-horaires-footer">
+          <li class="titre-horaires-footer" >HORAIRE</li>
+          <li class="jour-horaires-footer" ><b>Lundi</b> 07h30 à 12h30 - 13h30 à 18h30</li>
+          <li class="jour-horaires-footer" ><b>Mardi</b> 07h30 à 12h30 - 13h30 à 18h30</li>
+          <li class="jour-horaires-footer" ><b>Mercredi</b> 07h30 à 12h30 - 13h30 à 18h30</li>
+          <li class="jour-horaires-footer" ><b>Jeudi</b> 07h30 à 12h30 - 13h30 à 18h30</li>
+          <li class="jour-horaires-footer" ><b>Vendredi</b> 07h30 à 12h30 - 13h30 à 18h30</li>
+          <li class="jour-horaires-footer" ><b><i>Fermé le samedi et le dimanche</i></b></li>
+        </ul>
+      </li>
+      <li class="menu-f">
+        <ul class="list-menu-footer">
+          <li><a class="lien-rendez-vous" href="./formulaire.html" alt="formulaire client pour rendez-vous">Prendre un rendez-vous</a></div>
+          <li><a class="lien-home" href="#home">Home</a></li>
+          <li><a class="lien-accueil" href="./index.html" alt="page accueil">Accueil</a></li>
+          <li><a class="lien-contact" href="#contact">Contact</a></div>
+        </ul>
+      </li>
+      <li class="social-f">
+        <ul class="list-social-footer">
+          <li><img src="./css/img/f-logo.PNG"/></li>
+          <li><img src="./css./img/t-logo.PNG"></li>
+          <li><img src="./css./img/i-logo.PNG"></li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+      <p class="date-footer">@2024</p>
+    </footer>
+    <script src="script.js"></script>
+    </body>
+    </html>
